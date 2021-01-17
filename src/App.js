@@ -20,7 +20,7 @@ function App() {
         </div>
         <div className="users">
             {users.map(user =>
-                <div className="user">
+                <div key={user.id} className="user">
                     {user.name}
                 </div>
             )}
